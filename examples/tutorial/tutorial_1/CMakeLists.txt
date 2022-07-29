@@ -72,7 +72,7 @@ else()
     message( FATAL_ERROR "CXX compiler not recognized. CMake will quit." )
 endif()
 
-option(ENABLE_MPI "Enable MPI" ON)
+option(ENABLE_MPI "Enable MPI" OFF)
 if(ENABLE_MPI)
     message("Enabling MPI")
     find_package(MPI REQUIRED)
